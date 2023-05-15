@@ -1,0 +1,77 @@
+#header {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    background-color:rgb(19, 17, 17);
+    color: whitesmoke;
+    font-size: large;
+}
+
+#main {
+    text-align: justify;
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('./luffy.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: none;
+    font-size: large;
+    line-height: 1.6;
+    font-weight: 500;
+    text-color:aqua;
+    /* text-shadow: 0 0 3px #FF0000; */
+}
+
+#mainP {
+    font-family: Arial, sans-serif;
+    color: #A42A04;
+}
+
+#footer {
+    color: whitesmoke;
+    font-size: large;
+    padding-top: 10px;
+    padding-bottom: 0px;
+    background-color:rgb(19, 17, 17);
+}
+
+#footD {
+    display: flex;
+    justify-content: center;
+}
+
+#k {
+    margin: 0px;
+    text-align: center;
+    font-size: x-large;
+    margin-bottom: 5px;
+}
+
+#no-bg {
+    height: 269px;
+    width: 200px;
+}
+body {
+    font-family: Arial, sans-serif;
+    animation: colorAnimation 6s infinite;
+  }
+    @keyframes colorAnimation {
+     33%{
+        background-color: rgb(19, 18, 18);
+     }
+     33%{
+        background-color: aqua;
+     }
+     34%{
+        background-color:yellowgreen;
+     }
+     
+      }
+    }
+  }
