@@ -1,0 +1,111 @@
+body {
+  font-family: Arial, sans-serif;
+  animation: colorAnimation 3s infinite;
+}
+  @keyframes colorAnimation {
+    0% {
+      background-color: violet;
+    }
+    20% {
+      background-color: indigo;
+    }
+    40% {
+      background-color: blue;
+    }
+    60% {
+      background-color: green;
+    }
+    80% {
+      background-color: yellow;
+    }
+    100% {
+      background-color: violet;
+    }
+  }
+}
+
+h1 {
+  text-align: center;
+}
+
+#todo-container {
+  max-width: 400px;
+  margin: 20px auto;
+}
+#task-title{
+  width:100%;
+  padding:10px;
+  margin-bottom:10px;
+}
+#task-input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  transition: border-color 0.3s ease;
+}
+
+#task-input:hover {
+  border-color: #4CAF50;
+}
+
+#task-input:focus {
+  outline: none;
+  border-color: #4CAF50;
+  box-shadow: 0 0 5px #4CAF50;
+}
+
+#add-btn {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+#add-btn:hover {
+  background-color: violet;
+  box-shadow:0 0 5px orangered,0 0 25px orangered,0 0 50px orangered,0 0 200px orangered;
+}
+
+#add-btn:focus {
+  outline: none;
+  box-shadow: 0 0 5px #6245a0;
+}
+.edit-btn,
+.delete-btn {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+.edit-btn {
+  background-color: #4CAF50;
+}
+
+
+#pending-list,
+#completed-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+.completed-task {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
+.delete-btn {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  float: right;
+}
