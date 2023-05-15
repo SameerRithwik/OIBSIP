@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./calc.css">
+    <script src="./calc.js" defer></script>
+    <title>Calculator</title>
+</head>
+
+<body>
+    <div>
+        <h1 style="text-align:center; font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; color:red;" >CALCULATOR</h1>
+        <form action="" id="form">
+            <section class="field">
+                <input type="text" class="textfield" name="inputfield" value="" id="inputfield" />
+                <span id="result">&nbsp;</span>
+            </section>
+            <section class="buttons">
+                <button class="symbol" onclick="btnClick(this)">&#40;</button>
+                <button class="symbol" onclick="btnClick(this)">&#41;</button>
+                <button class="symbol" onclick="btnClick(this)">ans</button>
+                <button class="symbol" onclick="btnClick(this)">del</button>
+                <button class="symbol" onclick="btnClick(this)">clear</button>
+                <button class="num" onclick="btnClick(this)">7</button>
+                <button class="num" onclick="btnClick(this)">8</button>
+                <button class="num" onclick="btnClick(this)">9</button>
+                <button class="symbol" onclick="btnClick(this)">&percnt;</button>
+                <button class="symbol" onclick="btnClick(this)">&#8730;</button>
+                <button class="num" onclick="btnClick(this)">4</button>
+                <button class="num" onclick="btnClick(this)">5</button>
+                <button class="num" onclick="btnClick(this)">6</button>
+                <button class="symbol" onclick="btnClick(this)">&times;</button>
+                <button class="symbol" onclick="btnClick(this)">&divide;</button>
+                <button class="num" onclick="btnClick(this)">1</button>
+                <button class="num" onclick="btnClick(this)">2</button>
+                <button class="num" onclick="btnClick(this)">3</button>
+                <button class="symbol" onclick="btnClick(this)">&plus;</button>
+                <button class="symbol" onclick="btnClick(this)">&minus;</button>
+                <button class="symbol" onclick="btnClick(this)">&#8729;</button>
+                <button class="num" onclick="btnClick(this)">0</button>
+                <button class="symbol" onclick="btnClick(this)">&plusmn;</button>
+                <button id="ENTER" class="button" width="100px" onclick="btnClick(this)">ENTER</button>
+            </section>
+
+        </form>
+    </div>
+</body>
+
+</html>

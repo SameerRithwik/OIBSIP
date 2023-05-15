@@ -1,0 +1,104 @@
+body {
+    background-color:yellowgreen;
+    display: flex;
+    justify-content: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.buttons {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: auto auto auto auto auto;
+}
+
+div {
+    margin-top: 150px;
+    border-radius: 150px;
+    padding: 150px 80px;
+    background-color:black;
+}
+
+#result {
+    padding-right: 15px;
+    padding-top: 5px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: right;
+    font-size: 50px;
+}
+
+.field {
+    margin: 0 0 1rem 0;
+    display: grid;
+    border-radius: 10px;
+    background-color:rebeccapurple;
+}
+
+.textfield {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #6897c6;
+    border-radius: 10px;
+    padding: 20px;
+    padding-bottom: 0%;
+    font-size: medium;
+    background-color: #cbe5fe;
+    border-style: hidden;
+    outline: none
+}
+
+#ENTER {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    outline: none;
+    font-size: 20px;
+    font-weight: 500;
+    color: slateblue;
+    border: 20px;
+    padding: 25px;
+    border-radius: 25px;
+    grid-column: span 5;
+    background-color:darkseagreen
+}
+
+.symbol {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    outline: none;
+    font-weight: 500;
+    color: #588ec2;
+    font-size: 20px;
+    padding: 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: #a3d0fa;
+}
+
+.num {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 800;
+    outline: none;
+    color: #15375b;
+    font-size: 20px;
+    padding: 25px;
+    border: none;
+    border-radius: 10px;
+    background-color:burlywood;
+}
+symbol::before,symbol::after{
+    position: absolute;
+    content:"";
+    z-index:-1;
+}
+.symbol:hover{
+    background:#d2032f;
+    box-shadow:0 0 5px red,0 0 25px red, 0 0 50px red,0 0 200px red;
+}
+num::before,num::after{
+    position: absolute;
+    content:"";
+    z-index:-1;
+}
+.num:hover{
+    background:red;
+    box-shadow:0 0 5px red,0 0 25px red, 0 0 50px red,0 0 200px red;
+}
+#ENTER:hover{
+    box-shadow:inset -10.5em 0 0 0 violet,inset 10.5em 0 0 0 violet;
+}
